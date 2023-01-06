@@ -1,0 +1,15 @@
+:root {
+	// base
+	--font-family: "Montserrat", sans-serif;
+	--content-width: 1170px;
+	--container-offset: 15px;
+	--container-width: calc(
+		var(--content-width) + (var(--container-offset) * 2)
+	);
+
+	// colors
+	--white-color: #fff;
+	--grey-color: #c0c0c8;
+	--black-color: #1d1d1f;
+	--form-bg-color: rgba(0, 0, 0, 0.8);
+}

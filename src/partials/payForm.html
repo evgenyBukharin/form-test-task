@@ -1,0 +1,55 @@
+<section class="payForm">
+	<div class="payForm__container">
+		<form class="payForm__form" id="payForm">
+			<h3 class="payForm__title">Форма оплаты</h3>
+			<input
+				type="text"
+				name="name"
+				id="name"
+				class="input-reset payForm__input"
+				required
+				placeholder="Введите имя"
+			/>
+			<input
+				type="text"
+				name="surname"
+				id="surname"
+				class="input-reset payForm__input"
+				required
+				placeholder="Введите фамилию"
+			/>
+			<input
+				type="text"
+				name="tel"
+				id="tel"
+				class="input-reset payForm__input"
+				required
+				placeholder="Введите телефон"
+			/>
+			<input
+				type="text"
+				name="email"
+				id="email"
+				class="input-reset payForm__input"
+				required
+				placeholder="Введите почту"
+			/>
+			<button
+				class="btn-reset payForm__btn btn__primary btn__primary-dark"
+				type="submit"
+			>
+				Оплатить
+			</button>
+			<button class="btn-reset" id="closeFormBtn">
+				<img
+					loading="lazy"
+					src="./img/close-icon.svg"
+					class="image payForm__icon"
+					width="20"
+					height="20"
+					alt="closeIcon"
+				/>
+			</button>
+		</form>
+	</div>
+</section>

@@ -1,0 +1,66 @@
+.payForm {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+	&-visible {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: var(--form-bg-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+	&__title {
+		margin-top: 0;
+		margin-bottom: 26px;
+		font-size: 32px;
+		text-align: center;
+	}
+	&__form {
+		position: relative;
+		background: var(--white-color);
+		padding: 24px 70px;
+		padding-top: 40px;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+		cursor: default;
+	}
+	&__input {
+		padding-bottom: 6px;
+		border: none;
+		border-bottom: 1px solid var(--grey-color);
+		outline: none;
+		text-align: center;
+		transition: border 0.3s ease-in-out;
+		margin-bottom: 34px;
+		&::placeholder {
+			transition: opacity 0.3s ease-in-out;
+			opacity: 1;
+		}
+		&:focus {
+			border-color: var(--black-color);
+			&::placeholder {
+				opacity: 0;
+			}
+		}
+	}
+	&__btn {
+		text-transform: capitalize;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	&__icon {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+	}
+}
